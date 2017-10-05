@@ -2,7 +2,6 @@ package com.example.daniel.mycompsciworkspace;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 /**
  * Created by tina on 9/30/17.
@@ -71,6 +70,20 @@ public class CalculatorV2 {
 
         }
         System.out.println(expression);
+        switch (allOperators.get(0)){
+            case "*": result = expression.get(0) * expression.get(2);
+                System.out.println(expression.get(0) + "*" + expression.get(2));
+
+            case "/": result = expression.get(0) / expression.get(2);
+                System.out.println(expression.get(0) + "/" + expression.get(2));
+
+            case "+": result = expression.get(0) + expression.get(2);
+                System.out.println(expression.get(0) + "+" + expression.get(2));
+
+            case "-": result = expression.get(0) - expression.get(2);
+                System.out.println(expression.get(0) + "-" + expression.get(2));
+        }
+
 
         if(text.length() % 2 != 0){
             System.out.println("Usage: X + X = ");
@@ -78,9 +91,7 @@ public class CalculatorV2 {
             System.out.println(text.length());
             System.exit(1);
         }
-
-
-
+        System.out.println(result);
 
 
 
