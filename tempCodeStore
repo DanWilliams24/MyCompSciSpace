@@ -1,0 +1,23 @@
+package demo_programs;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MusicGrade {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> id = new ArrayList();
+		
+		ArrayList<Integer> mark = new ArrayList();
+		ArrayList<Character> grade = new ArrayList();
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Hello! To begin enter ID: ");
+		id.add(input.nextInt());
+		System.out.println("Enter Mark");
+		mark.add(input.nextInt());
+		System.out.println("");
+	}
+
+}
