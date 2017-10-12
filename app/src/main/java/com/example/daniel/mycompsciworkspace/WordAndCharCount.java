@@ -6,7 +6,7 @@ package com.example.daniel.mycompsciworkspace;
 import java.util.Scanner;
 
 /**
- * Created by tina on 9/17/17.
+ * Created by Daniel on 9/17/17.
  */
 
 public class WordAndCharCount {

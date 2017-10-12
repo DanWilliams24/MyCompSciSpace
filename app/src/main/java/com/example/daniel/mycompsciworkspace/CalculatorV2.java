@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Created by tina on 9/30/17.
+ * Created by Daniel on 9/30/17.
  */
 
 public class CalculatorV2 {
@@ -73,15 +73,16 @@ public class CalculatorV2 {
         switch (allOperators.get(0)){
             case "*": result = expression.get(0) * expression.get(2);
                 System.out.println(expression.get(0) + "*" + expression.get(2));
-
+                break;
             case "/": result = expression.get(0) / expression.get(2);
                 System.out.println(expression.get(0) + "/" + expression.get(2));
-
+                break;
             case "+": result = expression.get(0) + expression.get(2);
                 System.out.println(expression.get(0) + "+" + expression.get(2));
-
+                break;
             case "-": result = expression.get(0) - expression.get(2);
                 System.out.println(expression.get(0) + "-" + expression.get(2));
+                break;
         }
 
 

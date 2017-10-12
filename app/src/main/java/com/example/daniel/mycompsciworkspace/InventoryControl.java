@@ -1,16 +1,14 @@
 package com.example.daniel.mycompsciworkspace;
 
 
-
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
 
 /**
- * Created by tina on 9/16/17.
+ * Created by Daniel on 9/16/17.
  */
 
 public class InventoryControl {

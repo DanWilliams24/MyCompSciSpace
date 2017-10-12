@@ -2,6 +2,7 @@ package com.example.daniel.mycompsciworkspace;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -26,7 +27,7 @@ public class PokeSort {
             Scanner reader = new Scanner(System.in);
             userItemCode = reader.next();
 
-            for(int i = 0; i < userItemCode.length(); i++){
+            for(int i = 1; i < userItemCode.length(); i++){
                 Character currentChar = userItemCode.charAt(i);
                 if(currentChar.equals('-')){
                     Integer dashLocation = i;
@@ -62,5 +63,10 @@ public class PokeSort {
 
         System.out.println(namesArray);
         System.out.println(typesArray);
+        Arrays.sort(namesArray.toArray());
+        Arrays.sort(typesArray.toArray());
+        System.out.println(namesArray);
+        System.out.println(typesArray);
+
     }
 }
