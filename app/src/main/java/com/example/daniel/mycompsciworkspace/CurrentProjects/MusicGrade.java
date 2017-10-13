@@ -9,11 +9,14 @@ import java.util.Scanner;
 
 public class MusicGrade {
     public static void main(String[] args){
+        //Initialization
         String standing;
         String grade;
         Integer id;
         Integer mark;
         Scanner input = new Scanner(System.in);
+
+        //Begin Processing
         System.out.println("Enter Student ID: ");
         id = input.nextInt();
 
@@ -43,5 +46,7 @@ public class MusicGrade {
         System.out.println("Your Id: " + id);
         System.out.println("Your grade: " + grade);
         System.out.println("Your Standing: " + standing);
+        input.close();
+        System.out.println("End Of Processing");
     }
 }

@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class CalculatorV1 {
     static String operator;
-    static String
     static Integer firstOperand;
     static Integer secondOperand;
     static Integer result;
@@ -21,6 +20,7 @@ public class CalculatorV1 {
         firstOperand = input.nextInt();
         result = firstOperand;
         do {
+
 
             System.out.println("Input operator");
             operator = input.next();
