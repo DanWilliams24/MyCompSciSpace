@@ -48,5 +48,6 @@ public class MusicGrade {
         System.out.println("Your Standing: " + standing);
         input.close();
         System.out.println("End Of Processing");
+        //End of Processing
     }
 }
