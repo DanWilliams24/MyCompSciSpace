@@ -1,5 +1,9 @@
 package com.example.daniel.mycompsciworkspace;
 
+import com.example.daniel.mycompsciworkspace.CurrentProjects.CalculatorV1;
+import com.example.daniel.mycompsciworkspace.CurrentProjects.InventoryControl;
+import com.example.daniel.mycompsciworkspace.CurrentProjects.NewspaperPurchase;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

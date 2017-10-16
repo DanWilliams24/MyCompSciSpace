@@ -1,9 +1,6 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.CurrentProjects;
 
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 
@@ -89,24 +86,6 @@ public class InventoryControl {
         reader.close();
     }
 
-
-
-
-
-
-
-
-
-    static String getfLine() { //This is used to detect user input
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String line = null;
-        try {
-            line = in.readLine();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        return line;
-    }
 
 }
 

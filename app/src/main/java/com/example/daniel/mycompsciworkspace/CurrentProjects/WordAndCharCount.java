@@ -1,7 +1,4 @@
-package com.example.daniel.mycompsciworkspace;
-
-
-
+package com.example.daniel.mycompsciworkspace.CurrentProjects;
 
 import java.util.Scanner;
 
@@ -16,11 +13,13 @@ public class WordAndCharCount {
         Integer wordCount = 0;
         Integer sentenceCount = 0;
         Integer charCount = 0;
-
+        String text;
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter Text");
-        Scanner reader = new Scanner(System.in);
-        String text = "My name is Daniel Williams. I love computer programming,technology and the sciences. I am passionate about coding because it allows me to express my creativity. I took this class because as a programmer I need to create functional & beautiful experiences for my users to experience. By taking this class, I hope to further my artistic knowledge and learn to recognize art and its history.";
 
+         text = input.nextLine();
+        System.out.println(text.length());
+        System.out.println(text);
         for(int i = 0; i < text.length(); i++){
             ch = text.charAt(i);
             if(ch.equals('.')){

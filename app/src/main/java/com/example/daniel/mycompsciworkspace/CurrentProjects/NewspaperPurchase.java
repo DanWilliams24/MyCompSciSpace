@@ -1,15 +1,16 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.CurrentProjects;
 
 import java.text.DecimalFormat;
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
- * Created by tina on 9/18/17.
+ * Created by Daniel on 9/18/17.
  */
 
 public class NewspaperPurchase {
     public static void main(String[] args){
+        
         ArrayList<String> namesArray = new ArrayList<String>();
         Double total = 0.00;
         Integer itemNums = 0;
