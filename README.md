@@ -1,66 +1,37 @@
-package computer_science_problems;
 
-
-
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Random;
 
 /**
- * Created by Daniel on 9/16/17.
+ * Created by Daniel on 10/25/17.
  */
 
-public class InventoryControl {
-	public static void main(String[] args) {
-		Integer totalCount = 0;
-		Integer actionCount = 0;
-		Integer thrillerCount = 0;
-		Integer comedyCount = 0;
-		Integer documentaryCount = 0;
-		ArrayList<Integer> idStore = new ArrayList(); //Stores ID Numbers
-		Integer data;
-		Integer idInput = 0;
-		String codeInput;
-		Scanner input = new Scanner(System.in);  // Reading from System.in
-	
-		System.out.println("Data amount: ");
-		data = input.nextInt();
-		if(data < 0){
-			System.err.println("Not enough data");
-			System.exit(1);
-		}
-		for(int i = 0; i < data; i++){
-			System.out.println("Input Movie ID and code letter: ");
-			idInput = input.nextInt();
-			idStore.add(idInput);
-			
-			codeInput = input.next();
+public class RandomNumGeneration {
+    public static void main(String[] args){
+        Random generator = new Random();
+        int num1;
+        float num2;
+        num1 = generator.nextInt();//Random Integer Value with no bounds
+        System.out.println("A random Integer: " + num1);
 
-			if(codeInput.equalsIgnoreCase("A")){
-				totalCount = totalCount + 1;
-				actionCount = actionCount + 1;
+        num1 = generator.nextInt(10); //Random Integer Value between 0 and 10 excluding 10
+        System.out.println("From 0 - 9: " + num1);
 
-			}else if(codeInput.equalsIgnoreCase("T")){
-				totalCount = totalCount + 1;
-				thrillerCount = thrillerCount + 1;
+        num1 = generator.nextInt(10) +1;//Random Integer Value between 1 and 10
+        System.out.println("From 1-10: " + num1);
 
-			}else if(codeInput.equalsIgnoreCase("C")){
-				totalCount = totalCount + 1;
-				comedyCount = comedyCount + 1;
+        num1 = generator.nextInt(15) +20; //Random Integer value between 20 and 34[20 + 14]
+        System.out.println("From 20-34: " + num1);
 
-			}else if(codeInput.equalsIgnoreCase("D")){
-				totalCount = totalCount + 1;
-				documentaryCount = documentaryCount + 1;
+        num1 = generator.nextInt(20) -10; //Random Integer value between -10 and 9;
+        System.out.println("From -10-9: " + num1);
 
-			}else{
-				System.err.println("Invalid Character, Restarting Program...");
-				main(null);//auto-restarts program
-				System.exit(2);
-			}
-		}
-		System.out.printf("Action Category: "+ actionCount + "\t Thriller Category: "+thrillerCount + "\n");
-		System.out.println("Comedy Category: "+comedyCount + "\t Documentary Category: "+documentaryCount+ "\n");
-		System.out.println("Total: " +totalCount);
-		System.out.println("ID #s: " + idStore);
-		input.close();
-	}
+        num2 = generator.nextFloat(); //Random number between 0 and 1
+        System.out.println("Random float between 0-1: " + num2);
+
+        num2 = generator.nextFloat() * 6; //0.0 to 5.99999
+        System.out.println("Second float between 0-1: " + num2);
+        num1 = (int)num2 + 1; //Take whole number(integer) and add 1 to it.
+        System.out.println("From 1 to 6: " + num1);
+
+    }
 }
