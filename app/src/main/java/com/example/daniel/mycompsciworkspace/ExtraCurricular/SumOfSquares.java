@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.ExtraCurricular;
 
 /**
  * Created by tina on 9/23/17.

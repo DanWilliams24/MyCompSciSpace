@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.ExtraCurricular;
 
 
 import java.util.ArrayList;

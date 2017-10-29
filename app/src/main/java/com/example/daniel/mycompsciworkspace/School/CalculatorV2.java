@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.School;
 
 import java.util.ArrayList;
 import java.util.Scanner;

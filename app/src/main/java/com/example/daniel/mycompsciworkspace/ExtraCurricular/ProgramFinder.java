@@ -1,8 +1,8 @@
-package com.example.daniel.mycompsciworkspace;
+package com.example.daniel.mycompsciworkspace.ExtraCurricular;
 
-import com.example.daniel.mycompsciworkspace.CurrentProjects.CalculatorV1;
-import com.example.daniel.mycompsciworkspace.CurrentProjects.InventoryControl;
-import com.example.daniel.mycompsciworkspace.CurrentProjects.NewspaperPurchase;
+import com.example.daniel.mycompsciworkspace.School.CalculatorV1;
+import com.example.daniel.mycompsciworkspace.School.InventoryControl;
+import com.example.daniel.mycompsciworkspace.School.NewspaperPurchase;
 
 import java.util.ArrayList;
 import java.util.Scanner;

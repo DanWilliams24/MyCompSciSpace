@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects;
+package com.example.daniel.mycompsciworkspace.School;
 
 import java.util.Scanner;
 
@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class CalculatorV1 {
     //Variables declared global so it can be used between methods
     static String operator;
-    static int firstOperand;
-    static int secondOperand;
-    static int result;
+    static double firstOperand;
+    static double secondOperand;
+    static double result;
     static Boolean isDone = false;
     static Scanner input = new Scanner(System.in);
 
@@ -33,7 +33,7 @@ public class CalculatorV1 {
         input.close();
     }
     //This method takes a integer and returns an integer
-    public static int calculate(int newOperand) {
+    public static double calculate(double newOperand) {
         System.out.println("Input operator");
         operator = input.next();
 
@@ -45,7 +45,7 @@ public class CalculatorV1 {
         }
 
         System.out.println("Input number");
-        secondOperand = input.nextInt();
+        secondOperand = input.nextDouble();
         //Validate the operator and calculate answer
         switch (operator) {
             case "*":result = newOperand * secondOperand;
@@ -56,11 +56,14 @@ public class CalculatorV1 {
                 break;
             case "-":result = newOperand - secondOperand;
                 break;
+            case "^":result = Math.pow(newOperand , secondOperand);
+                break;
+            case "cos": result = Math.cos(secondOperand);
+                break;
             default: System.err.println("Could not identify operator: " + operator);
 
             }
         // return result to be used again in the loop
         return result;
-
     }
 }
