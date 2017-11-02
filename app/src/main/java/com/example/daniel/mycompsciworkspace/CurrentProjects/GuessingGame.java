@@ -10,11 +10,10 @@ import java.util.Scanner;
 
 public class GuessingGame {
     public static void main(String[] args){
-        int randomNumber;
+        int randomNumber,guess;
         int tries = 0;
         int tooHigh = 0;
         int tooLow = 0;
-        int guess;
         Random generator = new Random();
         Scanner input = new Scanner(System.in);
         randomNumber = generator.nextInt(10)+1;
