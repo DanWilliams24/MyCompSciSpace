@@ -1,37 +1,58 @@
+package computer_science_problems;
 
-import java.util.Random;
+import java.util.Scanner;
 
-/**
- * Created by Daniel on 10/25/17.
- */
+public class ArrayDemo {
 
-public class RandomNumGeneration {
-    public static void main(String[] args){
-        Random generator = new Random();
-        int num1;
-        float num2;
-        num1 = generator.nextInt();//Random Integer Value with no bounds
-        System.out.println("A random Integer: " + num1);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] score = {120,16,54,41,33};
+		
+		//#1
+		System.out.println("NUMBER 1");
+		int total = 0;
+		for(int index: score ){
+			total += index;
+		}
+		System.out.println(total);
+		
+		//#2
+		System.out.println("NUMBER 2");
+		int max = 0;
+		max = score[0];
+		for(int i = 1; i < score.length; i++){
+			if(max < score[i]){
+				max = score[i];
+			}
+		}
+		System.out.println(max);
+		
+		
+		//#3
+		System.out.println("NUMBER 3");
+		Scanner input = new Scanner(System.in);
+		int value = input.nextInt();
+		
+		for(int i = 0; i < score.length; i++){
+			if(value == score[i]){
+				System.out.println("Value: " + value + " is present at index: " + i);
+				i = score.length;
+			}
+			if(i == score.length -1 && value != score[i]){
+				System.out.println("Value: "+ value + " is not present at any index of the array");
+			}
+		}
+		
+		//4
+		System.out.println("NUMBER 4");
+		for(int i = 0; i < score.length; i++){
+			score[i] = 2*score[i];
+			System.out.println(score[i]);
+		}
+		
+		//
+	}
 
-        num1 = generator.nextInt(10); //Random Integer Value between 0 and 10 excluding 10
-        System.out.println("From 0 - 9: " + num1);
-
-        num1 = generator.nextInt(10) +1;//Random Integer Value between 1 and 10
-        System.out.println("From 1-10: " + num1);
-
-        num1 = generator.nextInt(15) +20; //Random Integer value between 20 and 34[20 + 14]
-        System.out.println("From 20-34: " + num1);
-
-        num1 = generator.nextInt(20) -10; //Random Integer value between -10 and 9;
-        System.out.println("From -10-9: " + num1);
-
-        num2 = generator.nextFloat(); //Random number between 0 and 1
-        System.out.println("Random float between 0-1: " + num2);
-
-        num2 = generator.nextFloat() * 6; //0.0 to 5.99999
-        System.out.println("Second float between 0-1: " + num2);
-        num1 = (int)num2 + 1; //Take whole number(integer) and add 1 to it.
-        System.out.println("From 1 to 6: " + num1);
-
-    }
+	
+	
 }
