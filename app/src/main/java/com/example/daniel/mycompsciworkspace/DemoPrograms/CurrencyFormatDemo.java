@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects;
+package com.example.daniel.mycompsciworkspace.DemoPrograms;
 
 import java.text.NumberFormat;
 import java.util.Locale;
