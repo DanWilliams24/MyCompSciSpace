@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects;
+package com.example.daniel.mycompsciworkspace.ExtraCurricular;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
 package com.example.daniel.mycompsciworkspace.CurrentProjects.Diploma_Project;
 
 /**
- * Created by tina on 12/7/17.
+ * Created by Daniel on 12/7/17.
  */
 
 public class Diploma {

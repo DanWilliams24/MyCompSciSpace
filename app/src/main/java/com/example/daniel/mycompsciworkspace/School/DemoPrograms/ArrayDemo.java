@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects;
+package com.example.daniel.mycompsciworkspace.School.DemoPrograms;
 
 import java.util.Scanner;
 

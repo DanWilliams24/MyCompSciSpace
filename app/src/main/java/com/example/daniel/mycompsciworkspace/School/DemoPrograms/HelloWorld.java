@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects;
+package com.example.daniel.mycompsciworkspace.School.DemoPrograms;
 
 /**
  * Created by tina on 12/7/17.
