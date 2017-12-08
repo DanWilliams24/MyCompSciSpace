@@ -6,8 +6,8 @@ package com.example.daniel.mycompsciworkspace.CurrentProjects.Diploma_Project;
 
 public class Student {
     private String name;
-    private Subject[] subjects;
-    private Subject[] electives;
+    private Subject[] subjects = new Subject[3];
+    private Subject[] electives = new Subject[3];
     private String grades;
 
 
@@ -78,5 +78,17 @@ public class Student {
 
     public String getName() {
         return name;
+    }
+
+    public String getGrades() {
+        return grades;
+    }
+
+    public Subject[] getElectives() {
+        return electives;
+    }
+
+    public Subject[] getSubjects() {
+        return subjects;
     }
 }

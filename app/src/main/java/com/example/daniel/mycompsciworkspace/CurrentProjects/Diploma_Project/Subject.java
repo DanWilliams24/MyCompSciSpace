@@ -47,10 +47,10 @@ public class Subject {
             return 'C';
         }else if(marks < 89){
             return 'B';
-        }else if(marks < 100){
+        }else if(marks <= 100){
             return 'A';
         }else{
-            throw new IllegalArgumentException("Grade out of Scale:" + marks);
+            throw new IllegalArgumentException("Marks out of Scale:" + marks);
         }
 
     }

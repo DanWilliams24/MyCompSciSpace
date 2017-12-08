@@ -55,12 +55,21 @@ public class Diploma {
     }
 
 
-    public void Certificate(){
+    public String GenCertificate(){
         String cert = "\t\t" + University.toUpperCase() +
-                      "\n\t\t" + getMonth() + year +
+                      "\n\t\t\t\t" + getMonth() +" " + year +
                       "\n\t\tThis diploma is awarded to:" +
-                      "\n\t\t" + Recipient.getName() +
+                      "\n\t\t\t\t" + Recipient.getName() +
                       "\n\n\n\tSUBJECT\t\t\tGRADE";
         //TODO add for-loop to print each subjects and grades
+        Subject[] subjects = Recipient.getSubjects();
+        for(Subject subject: Recipient.getSubjects()){
+            cert = cert + "\n\t" + subject.getName() + "\t\t\t" + subject.getGrade();
+        }
+        for(Subject elective: Recipient.getElectives()){
+            cert = cert + "\n\t" + elective.getName() + "\t\t\t" + elective.getGrade();
+        }
+        return cert;
+
     }
 }
