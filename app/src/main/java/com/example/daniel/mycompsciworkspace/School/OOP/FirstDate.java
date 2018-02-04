@@ -43,9 +43,9 @@ public class FirstDate {
 
 
     /***************************************METHODS*****************************************/
-    public boolean equals(FirstDate birthday){
-        return((month.equals(birthday.month)) && (day == birthday.day));
-    }
+    //public boolean equals(FirstDate birthday){
+     //   return((month.equals(birthday.month)) && (day == birthday.day));
+    //}
 
     public void displayOutput(){
         System.out.println(getMonth() + " " + getDay() + ", " + getYear() );

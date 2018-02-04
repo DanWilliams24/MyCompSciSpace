@@ -85,5 +85,7 @@ public abstract class FridgeItem {
 
     public abstract double getPrice();
     public abstract Object getType();
+    public abstract java.util.Date getDate();
+
 
 }

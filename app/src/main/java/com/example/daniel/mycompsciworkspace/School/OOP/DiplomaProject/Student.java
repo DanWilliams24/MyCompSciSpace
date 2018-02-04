@@ -1,14 +1,11 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects.Diploma_Project;
+package com.example.daniel.mycompsciworkspace.School.OOP.DiplomaProject;
 
-/**
- * Created by Daniel on 12/6/17.
- */
+
 
 public class Student {
     private String name;
     private Subject[] subjects = new Subject[3];
     private Subject[] electives = new Subject[3];
-    private String grades;
 
 
     public Student(){
@@ -17,30 +14,29 @@ public class Student {
         this.subjects[1] = new Subject("English Literature");
         this.subjects[2] = new Subject("Mathematics");
         this.electives = new Subject[3];
-        this.grades = "XXXXXX";
     }
 
-    public Student(String name){
+     public Student(String name){
         this.name = name;
         this.subjects[0] = new Subject("English Language");
         this.subjects[1] = new Subject("English Literature");
         this.subjects[2] = new Subject("Mathematics");
         this.electives = new Subject[3];
-        this.grades = "XXXXXX";
     }
 
     public Student(String name, Subject[] electives){
+        this.name = name;
         this.subjects[0] = new Subject("English Language");
         this.subjects[1] = new Subject("English Literature");
         this.subjects[2] = new Subject("Mathematics");
-        this.name = name;
         this.electives = electives;
+
     }
 
     public Student(Student other){
-        this.grades = other.grades;
         this.name = other.name;
         this.subjects = other.subjects;
+        this.electives = other.electives;
     }
 
     public void setLangGrade(double marks){
@@ -78,10 +74,6 @@ public class Student {
 
     public String getName() {
         return name;
-    }
-
-    public String getGrades() {
-        return grades;
     }
 
     public Subject[] getElectives() {

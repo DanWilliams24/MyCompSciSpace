@@ -1,7 +1,7 @@
 package com.example.daniel.mycompsciworkspace.ExtraCurricular.OOP;
 
 /**
- * Created by tina on 11/26/17.
+ * Created by Daniel on 11/26/17.
  */
 
 public interface NonEdible {

@@ -5,9 +5,11 @@ package com.example.daniel.mycompsciworkspace.ExtraCurricular.OOP;
  */
 
 public abstract class Drink extends FridgeItem implements Edible {
+
     private String consistency;
     private Taste taste;
     private FoodStuff[] ingredients;
+
     protected Drink(){
         consistency = "valid Consistency";
         ingredients = null;
@@ -21,6 +23,7 @@ public abstract class Drink extends FridgeItem implements Edible {
     protected Drink(FoodStuff...ingredients){
         this.ingredients = ingredients;
     }
+
 
 
 

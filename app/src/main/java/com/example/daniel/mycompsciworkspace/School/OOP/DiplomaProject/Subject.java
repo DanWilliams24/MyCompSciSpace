@@ -1,4 +1,4 @@
-package com.example.daniel.mycompsciworkspace.CurrentProjects.Diploma_Project;
+package com.example.daniel.mycompsciworkspace.School.OOP.DiplomaProject;
 
 /**
  * Created by tina on 12/6/17.
@@ -36,7 +36,7 @@ public class Subject {
         return whatGrade();
     }
 
-    public char whatGrade(){
+    private char whatGrade(){
         if(marks < 49){
             return 'U';
         }else if(marks < 59){
