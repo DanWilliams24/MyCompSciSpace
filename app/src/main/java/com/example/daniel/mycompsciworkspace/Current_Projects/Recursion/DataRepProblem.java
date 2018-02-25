@@ -4,18 +4,22 @@ package com.example.daniel.mycompsciworkspace.Current_Projects.Recursion;
  * Created by Daniel on 1/31/18.
  */
 
+import java.util.Scanner;
+
 public class DataRepProblem {
     public static void main(String[] args){
-        System.out.println("Base Ten to Two - Recursive");
-        baseTenTwo(61);
+        //System.out.println("Base Ten to Two - Recursive");
+       // baseTenTwo(79);
+        //System.out.println("");
+
+        System.out.println("Conversion");
+        Scanner in = new Scanner(System.in);
+        baseTenTwo(in.nextInt());
         System.out.println("");
 
-        System.out.println("Base Two to Ten");
-
-        baseTwoTen("1001010");
-
-        System.out.println("Base Sixteen to Ten");
-        baseHexTen("AB1");
+        main(null);
+       // System.out.println("Base Sixteen to Ten");
+       // baseHexTen("AB1");
 
     }
 
@@ -26,6 +30,29 @@ public class DataRepProblem {
         System.out.print(n%2);
     }
 
+    public static void baseTenHex(int n){
+        if(n/16 != 0){
+            baseTenHex(n/16);
+        }
+
+        int num = n%16;
+        switch (num){
+            case 10: System.out.print("A");
+                break;
+            case 11: System.out.print("B");
+                break;
+            case 12: System.out.print("C");
+                break;
+            case 13: System.out.print("D");
+                break;
+            case 14: System.out.print("E");
+                break;
+            case 15: System.out.print("F");
+                break;
+            default: System.out.print(n%16);
+        }
+
+    }
 
     public static void baseTwoTen(String binary){
         double sum = 0;

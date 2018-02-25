@@ -39,4 +39,55 @@ public class GuessingGame {
 
         } while(!(guess == randomNumber));
     }
+
+    public static int runTest(int upper, int lower,int key) {
+        return binarySearch(createRange(upper, lower), key);
+    }
+
+    public static int guess(int randomNumber, int guess){
+
+        if(guess == randomNumber){
+            return 0;
+        }else if(guess > randomNumber){
+            System.out.println("Incorrect! Too High");
+            return 1;
+        }else if(guess < randomNumber){
+            System.out.println("Incorrect! Too Low");
+            return -1;
+        }
+        return 1;
+    }
+
+    public static int[] createRange(int lowermost,int uppermost){
+        int[] arr = new int[uppermost];
+        int count =0;
+        for (int i = lowermost; i < uppermost; i++) {
+            arr[count] = i;
+            count++;
+        }
+        return arr;
+    }
+
+    public static int binarySearch(int[] a, int key) {
+
+        if (a.length == 0) {
+            return -1;
+        }
+        int low = 0;
+        int high = a.length-1;
+        int tries = 0;
+        while(low <= high) {
+            int middle = (low+high) /2;
+
+            if (guess(key,a[middle]) == -1){
+                low = middle +1;
+            } else if (guess(key,a[middle]) == 1){
+                high = middle -1;
+            } else { // The element has been found
+                return tries;
+            }
+            tries++;
+        }
+        return -2;
+    }
 }

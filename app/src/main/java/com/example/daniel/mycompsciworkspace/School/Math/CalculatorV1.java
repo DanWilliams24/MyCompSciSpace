@@ -69,4 +69,5 @@ public class CalculatorV1 {
         // return result to be used again in the loop
         return result;
     }
+
 }

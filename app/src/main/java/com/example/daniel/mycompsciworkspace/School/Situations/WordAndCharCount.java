@@ -41,6 +41,29 @@ public class WordAndCharCount {//Begin Class
         input.close();
         //End Processing
     }//End Main()
+    public static int genCount(String text){
+        char character;
+        int wordCount = 0;
+        int charCount = 0;
+        for(int i = 0; i < text.length(); i++){//Begin For-loop
+            character = text.charAt(i);
+            if(character == '.' || character == '!' || character == '?'){ //Begin if
+                charCount++;
+                wordCount++;
+                i = text.length();
+                System.out.print(character);
+            } else if(character == ' '){
+                wordCount++;
+                charCount++;
+                //System.out.print(character);
+            } else {
+                charCount++;
+                //System.out.print(character);
+            }//end if
+
+        }//End for-loop
+        return wordCount;
+    }
 }//End Class
 
 
